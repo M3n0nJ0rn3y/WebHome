@@ -5,25 +5,36 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const PAGES = [
+  // This is very ugly.
+  { path: "/", label: "Home", element: ( 
+  <header className="App-header">
+    <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        Does this update live on the homeapp container
+      </p>
+  </header>)},
+  { path: "/subpages/Projects", label: "Projects", element: <Get_Projects /> },
+  { path: "/subpages/Education", label: "Education", element: <Get_Education />}
+
+]
+
 function App() {
   return (
     <div className="App">
       <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/subpages/Projects">Projects</Link> |{" "}
-        <Link to="/subpages/Education">Education</Link>
+        {PAGES.map((page, i) => (
+          <span key={page.path}>
+            <Link to={page.path}>{page.label}</Link>
+            {i < PAGES.length - 1 && " | "}
+          </span>
+        ))}
       </nav>
+
       <Routes>
-        <Route path="/subpages/Projects" element={<Get_Projects />} />
-        <Route path="/subpages/Education" element={<Get_Education />} />
-        <Route path="/" element={
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Does this update live on the homeapp container
-            </p>
-          </header>
-        } />
+        {PAGES.map((page) => (
+          <Route key={page.path} path={page.path} element={page.element} />
+        ))}
       </Routes>
     </div>
   );
