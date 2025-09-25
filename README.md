@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# My Web-Application in React 
+# NB: This README.md is still under development.
+I am currently developing a webpage that introduces me from different perspectives. Here I will document my process, what I struggle with, and what I am currently planning to implement on my website. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Content of this page:
+1. [Webapp content](#what-the-webapp-will-cover-briefly-speaking)
+2. [Stuggles](#what-i-struggled-with)
 
-## Available Scripts
+### What the webapp will cover (briefly speaking):
+* Education
+* Proffesional experience
+* Hobby Projects
+* My diverse interests
+* A visualization of various security implementations
 
-In the project directory, you can run:
+### What I struggled with:
+##### Button expanding beyond the navigation bar.
+I was only starting to work with the appearence of my Homepage and getting accomodated with Typescript and how React handles names. When I decided to spice my code with some personal name giving. I wanted to give my "link" to another page, a specific name. That is because I imagined I will probably create many other buttons and links through out this page so I was worried if just sticking with the default name of an html link (which is "a") would couse me some costumization troubles in the feature. 
 
-### `npm start`
+I decided that I will name it something else then "nav" and "a". So I managed to change the names in the code from:
+**Here there should be a code snippet.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+to
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Another code snippet**
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
