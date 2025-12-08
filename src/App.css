@@ -51,12 +51,11 @@ nav {
   background-color: #3B82F6;
   color: white;
   text-decoration: none;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 5px 5px;
   padding: 10px 25px;
   margin: 0 15px;
   position: relative;
   transition: transform 0.3s ease, padding 0.3s, margin 0.3s ease;
-  /*transition: transform 0.3s, margin 0.3s, padding 0.7s ease;*/
 }
 
 .my-button:hover {
@@ -79,7 +78,7 @@ nav {
   position: absolute;
   left: 0; 
   right: 0;
-  top: 100%;
+  top: 90%;
   background-color: #1E40AF;
   z-index: 50;
   min-width: 80px;
@@ -99,4 +98,12 @@ nav {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover > .my-button {
+  margin: 0px 50px;
+  padding: 10px 120px;
+  background-color: #1E40AF;
+  border-color: #1E293B;
+  background-position: right bottom;
 }
