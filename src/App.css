@@ -58,6 +58,12 @@ nav {
   transition: transform 0.3s ease, padding 0.3s, margin 0.3s ease;
 }
 
+.sub-button {
+  padding: 10px;
+  margin: 3% 0;
+  border-radius: 8px;
+}
+
 .my-button:hover {
   margin: 0px 50px;
   padding: 10px 120px;

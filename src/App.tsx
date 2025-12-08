@@ -5,6 +5,7 @@ import GET_EXPERIENCE from "./pages/Experience";
 import GET_INTERESTS from "./pages/Interests";
 import GET_SUBINTERESTS from "./pages/Interests_subpage/Sub_interests";
 import MyButton from "./costums/myButton";
+import SUB_BUTTON from "./costums/subButton";
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -43,7 +44,7 @@ function App() {
                 
                 <div className="dropdown-content"> 
                   {page.subpages.map((sub, sublink_num) => (
-                    <MyButton key={sublink_num} to={sub.path} label={sub.label} />
+                    <SUB_BUTTON key={sublink_num} to={sub.path} label={sub.label} />
                   ))}
                 </div>
                 
