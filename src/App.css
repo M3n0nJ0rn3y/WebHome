@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 0.2s linear;
+    animation: App-logo-spin infinite 120s linear;
   }
 }
 
@@ -55,7 +55,7 @@ nav {
   padding: 10px 25px;
   margin: 0 15px;
   position: relative;
-  transition: transform 0.3s , padding 0.3s, margin 0.3s ease;
+  transition: transform 0.3s ease, padding 0.3s, margin 0.3s ease;
   /*transition: transform 0.3s, margin 0.3s, padding 0.7s ease;*/
 }
 
@@ -77,7 +77,7 @@ nav {
   margin: 0px 50px;
   display: none;
   position: absolute;
-  left: 0; /* For some reason these these lines are needed to center the dropdown. Find out why they fix the issue. */
+  left: 0; 
   right: 0;
   top: 100%;
   background-color: #1E40AF;
