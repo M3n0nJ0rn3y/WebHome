@@ -1,4 +1,4 @@
-function Get_Projects() {
+function GET_PROJECTS() {
     return (
         <div>
             <h1> This is my page with all my many Projects! </h1>
@@ -7,4 +7,4 @@ function Get_Projects() {
     );
 }
 
-export default Get_Projects;
+export default GET_PROJECTS;

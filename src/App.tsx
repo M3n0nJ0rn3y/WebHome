@@ -1,14 +1,15 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Get_Education from "./pages/Education";
-import Get_Projects from "./pages/Projects";
-import Get_Experience from "./pages/Experience";
-import Get_Interests from "./pages/Interests";
+import GET_EDUCATION from "./pages/Education";
+import GET_PROJECTS from "./pages/Projects";
+import GET_EXPERIENCE from "./pages/Experience";
+import GET_INTERESTS from "./pages/Interests";
+import GET_SUBINTERESTS from "./pages/Interests_subpage/Sub_interests";
 import MyButton from "./costums/myButton";
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import path from "path";
-import Get_SubInterests from "./pages/Interests_subpage/Sub_interests";
+
 
 const PAGES = [
   // This is very ugly.
@@ -19,12 +20,12 @@ const PAGES = [
         Does this update live on the homeapp container
       </p>
   </header>)},
-  { path: "/pages/Projects", label: "Projects", element: <Get_Projects /> },
-  { path: "/pages/Education", label: "Education", element: <Get_Education />},
-  { path: "/pages/Experience", label: "Experience", element: <Get_Experience /> },
-  { path: "/pages/Interests", label: "Interests", element: <Get_Interests /> ,
+  { path: "/pages/Projects", label: "Projects", element: <GET_PROJECTS /> },
+  { path: "/pages/Education", label: "Education", element: <GET_EDUCATION />},
+  { path: "/pages/Experience", label: "Experience", element: <GET_EXPERIENCE /> },
+  { path: "/pages/Interests", label: "Interests", element: <GET_INTERESTS /> ,
     subpages: [
-      {path: "/pages/Interests_subpage/Sub_interests", label: "Sub_Interest_1", element: <Get_SubInterests />}
+      {path: "/pages/Interests_subpage/Sub_interests", label: "Sub_Interest_1", element: <GET_SUBINTERESTS />}
     ]
   }
   //Remember to import the functions before using them here.
@@ -37,13 +38,15 @@ function App() {
         {PAGES.map((page, page_num) => (
           <span key={page.path}>
             {page.subpages ? (
-              <div className="dropdown">
+              <div className="dropdown"> 
                 <MyButton to={page.path} label={page.label}/>
-                <div className="dropdown-content">
+                
+                <div className="dropdown-content"> 
                   {page.subpages.map((sub, sublink_num) => (
                     <MyButton key={sublink_num} to={sub.path} label={sub.label} />
                   ))}
                 </div>
+                
               </div>
             ) : (
               <MyButton to={page.path} label={page.label}/>

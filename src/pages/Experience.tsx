@@ -1,4 +1,4 @@
-function Get_Experience() {
+function GET_EXPERIENCE() {
     return (
         <div>
             <h1> This is my page with my Experience! </h1>
@@ -7,4 +7,4 @@ function Get_Experience() {
     );
 }
 
-export default Get_Experience;
+export default GET_EXPERIENCE;

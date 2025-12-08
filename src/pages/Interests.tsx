@@ -1,4 +1,4 @@
-function Get_Interests() {
+function GET_INTERESTS() {
     return (
         <div>
             <h1> This is my page with my Interests! </h1>
@@ -7,4 +7,4 @@ function Get_Interests() {
     );
 }
 
-export default Get_Interests;
+export default GET_INTERESTS;

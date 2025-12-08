@@ -1,4 +1,4 @@
-function Get_Education() {
+function GET_EDUCATION() {
     return (
         <div>
             <h1> This is my page with my Education! </h1>
@@ -7,4 +7,4 @@ function Get_Education() {
     );
 }
 
-export default Get_Education;
+export default GET_EDUCATION;
