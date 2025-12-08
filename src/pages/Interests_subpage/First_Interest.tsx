@@ -1,4 +1,4 @@
-function GET_SUBINTERESTS() {
+function FIRST_INTEREST() {
     return (
         <div>
             <h1> This is a subpage of my interestests! </h1>
@@ -7,4 +7,4 @@ function GET_SUBINTERESTS() {
     );
 }
 
-export default GET_SUBINTERESTS;
+export default FIRST_INTEREST;
