@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { GET_EDUCATION, GET_PROJECTS, GET_EXPERIENCE, GET_INTERESTS } from "./pages"
 import GET_FIRST_INTEREST from "./pages/Interests_subpage/First_Interest";
+import GET_SECOND_INTEREST from "./pages/Interests_subpage/Second_Interest";
 import {MyButton, SUB_BUTTON} from "./costums"
 import React from 'react';
 import logo from './logo.svg';
@@ -22,7 +23,8 @@ const PAGES = [
   { path: "/pages/Experience", label: "Experience", element: <GET_EXPERIENCE /> },
   { path: "/pages/Interests", label: "Interests", element: <GET_INTERESTS /> ,
     subpages: [
-      {path: "/pages/Interests_subpage/Sub_interests", label: "First Interest", element: <GET_FIRST_INTEREST />}
+      {path: "/pages/Interests_subpage/First_Interest", label: "First Interest", element: <GET_FIRST_INTEREST />},
+      {path: "/pages/Interests_subpage/Second_Interest", label: "Second Interest", element: <GET_SECOND_INTEREST />}
     ]
   }
   //Remember to import the functions before using them here.
