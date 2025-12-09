@@ -51,7 +51,7 @@ function App() {
               <MyButton to={page.path} label={page.label}/>
             )}
 
-            {page_num < PAGES.length - 1 && " | "}
+            {page_num > 0 && page_num < PAGES.length - 1 && " | "}
           </span>
         ))}
       </nav>

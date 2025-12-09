@@ -37,6 +37,8 @@
   }
 }
 
+/* More technical CSS */
+
 nav {
   overflow: visible; /* This allows the button to escape the navigation bar*/
   position: relative;
@@ -45,6 +47,38 @@ nav {
   padding-top: 20px;
   font-size: 1.1em;
 }
+
+/* === HOME BUTTON STYLE === */
+
+/* HOME BUTTON: first button in the nav */
+nav span:first-child .my-button,
+nav span:first-child .my-button:hover {
+  position: fixed;
+  display: inline-flex;        /* center the icon */
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 1px;                  /* override your hover padding */
+  margin: 0 -100px;              /* keep spacing similar */
+  color: transparent;          /* hide the "Home" text, but keep it for a11y */
+}
+
+/* Draw the house symbol */
+nav span:first-child .my-button::before {
+  content: "🏠";               /* house glyph */
+  font-size: 22px;
+  line-height: 1;
+  padding-left: 48px;           /* Perfectly in centre of the button*/
+  color: white;                /* icon color */
+}
+
+/* Optional: change icon color on hover */
+nav span:first-child .my-button:hover::before {
+  color: #61dafb;
+}
+
+
 
 
 /*BUTTON DEFINITIONS:*/
