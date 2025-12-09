@@ -156,3 +156,20 @@ nav span:first-child .my-button:hover::before {
   border-color: #1E293B;
   background-position: right bottom;
 }
+
+
+/*HOME BUTTON STYLING*/
+nav span:first-child .my-button {
+  position: absolute;
+  left: 160px;
+  transition: transform 0.5s;
+}
+
+nav span:first-child .my-button:hover {
+  transform: scale(1.5);
+}
+
+nav span:first-child .my-button:active {
+  transform: translateY(-30%) scale(0.75) rotate(-6deg);
+  transition: transform 0.05s;
+}
