@@ -1,5 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { GET_EDUCATION, GET_PROJECTS, GET_EXPERIENCE, GET_INTERESTS } from "./pages"
+import GET_BACHELOR from "./pages/Education_subpage/Bachelor";
+import GET_MASTER from "./pages/Education_subpage/Master";
 import GET_FIRST_INTEREST from "./pages/Interests_subpage/First_Interest";
 import GET_SECOND_INTEREST from "./pages/Interests_subpage/Second_Interest";
 import {MyButton, SUB_BUTTON} from "./costums"
@@ -19,8 +21,13 @@ const PAGES = [
       </p>
   </header>)},
   { path: "/pages/Projects", label: "Projects", element: <GET_PROJECTS /> },
-  { path: "/pages/Education", label: "Education", element: <GET_EDUCATION />},
-  { path: "/pages/Experience", label: "Experience", element: <GET_EXPERIENCE /> },
+  { path: "/pages/Education", label: "Education", element: <GET_EDUCATION /> ,
+    subpages: [
+      {path:"/pages/Education_subpage/Bachelor", label: "Bachelor", element: <GET_BACHELOR />},
+      {path:"/pages/Education_subpage/Master", label: "Master", element: <GET_MASTER />}
+    ]
+   },
+  { path: "/pages/Experience", label: "Experience", element: <GET_EXPERIENCE />},
   { path: "/pages/Interests", label: "Interests", element: <GET_INTERESTS /> ,
     subpages: [
       {path: "/pages/Interests_subpage/First_Interest", label: "First Interest", element: <GET_FIRST_INTEREST />},
