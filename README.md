@@ -41,5 +41,5 @@ I wanted to replace the default HTML tag `<a>` with a more descriptive name (to 
 ---
 
 ## ✅ To-Do:
-- Change the Home button into an Home icon using react-icons.
+- Edit the Bachelor side.
 
